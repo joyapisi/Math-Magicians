@@ -5,42 +5,38 @@ body {
 #calculator {
   width: 70%;
   height: 600px;
-  margin: 8rem 16rem;
+  margin: 200px 250px;
 }
 
 #terminate {
-  height: 18%;
-  width: 70%;
   background-color: gray;
+  padding-right: 15px;
   text-align: right;
-  font-size: xx-large;
-  color: white;
+  font-size: 32px;
+  color: #fff;
   box-sizing: border-box;
+  height: 15%;
+  width: 70%;
 }
 
 #buttons-container {
   display: flex;
-  height: 60%;
+  height: 70%;
   width: 80%;
 }
 
 #buttons {
-  width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 70%;
 }
 
 #buttons > * {
-  border: 1px solid gainsboro;
-  outline: none;
-  font-size: x-large;
+  border: 1px solid #e6e6e6;
+  font-size: 28px;
 }
 
-#buttons :nth-child(4n) {
-  background-color: #eb8e23;
-}
-
-#buttons :last-child {
+#buttons :nth-child(4n), #buttons :last-child {
   background-color: #eb8e23;
 }
 
