@@ -36,7 +36,8 @@ body {
   font-size: 28px;
 }
 
-#buttons :nth-child(4n), #buttons :last-child {
+#buttons :nth-child(4n),
+#buttons :last-child {
   background-color: #eb8e23;
 }
 
