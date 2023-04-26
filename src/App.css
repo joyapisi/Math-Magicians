@@ -37,11 +37,11 @@ body {
 }
 
 #buttons :nth-child(4n) {
-  background-color: orange;
+  background-color: #eb8e23;
 }
 
 #buttons :last-child {
-  background-color: orange;
+  background-color: #eb8e23;
 }
 
 #buttons :nth-child(17) {
