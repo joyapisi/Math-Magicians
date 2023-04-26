@@ -7,16 +7,14 @@ React JS Project
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - - [Tech Stack](#tech-stack)
-    - - [Key Features](#key-features)
-  - [🎥 Video Explanation](#video-explanation)
-  - [🚀 Live Demo](#live-demo)
+      - [Tech Stack](#tech-stack)
+      - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#set-up)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-    - - [Install webpack](#webhint-installation)
-    - - [Install linters](#linter-installation)
+      - [Install webpack](#webhint-installation)
+      - [Install linters](#linter-installation)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -60,13 +58,6 @@ By building this application, you will learn how to use React. It also follows <
 - **[Dynamic-Design]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🎥 Video Explanation <a name="video-explanation"></a>
-
-Coming soon!
-
-## 🚀 Live Demo <a href="" name="live-demo">Coming Soon!</a>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 

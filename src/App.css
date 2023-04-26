@@ -1,39 +1,49 @@
-.App {
-  text-align: center;
+body {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#calculator {
+  width: 70%;
+  height: 600px;
+  margin: 8rem 16rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#terminate {
+  height: 18%;
+  width: 70%;
+  background-color: gray;
+  text-align: right;
+  font-size: xx-large;
   color: white;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+#buttons-container {
+  display: flex;
+  height: 60%;
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+#buttons {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+#buttons > * {
+  border: 1px solid gainsboro;
+  outline: none;
+  font-size: x-large;
+}
+
+#buttons :nth-child(4n) {
+  background-color: orange;
+}
+
+#buttons :last-child {
+  background-color: orange;
+}
+
+#buttons :nth-child(17) {
+  grid-column: span 2;
 }
