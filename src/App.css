@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 #calculator {
@@ -8,9 +8,9 @@ body {
   margin: 8rem 16rem;
 }
 
-#exit {
+#terminate {
   height: 18%;
-  width: 80%;
+  width: 100%;
   background-color: gray;
   text-align: right;
   font-size: xx-large;
@@ -18,32 +18,32 @@ body {
   box-sizing: border-box;
 }
 
-#input {
+#buttons-container {
   display: flex;
   height: 60%;
   width: 80%;
 }
 
-#digits {
+#buttons {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#digits > * {
+#buttons > * {
   border: 1px solid gainsboro;
   outline: none;
   font-size: x-large;
 }
 
-#digits :nth-child(4n) {
+#buttons :nth-child(4n) {
   background-color: orange;
 }
 
-#digits :last-child {
+#buttons :last-child {
   background-color: orange;
 }
 
-#digits :nth-child(17) {
+#buttons :nth-child(17) {
   grid-column: span 2;
 }

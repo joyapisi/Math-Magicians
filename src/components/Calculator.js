@@ -1,4 +1,4 @@
-function Calculator() {
+export default function Calculator() {
   const buttonKeys = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
 
   return (
@@ -9,15 +9,13 @@ function Calculator() {
         value="0"
         disabled
       />
-      <section id="buttons-container">
-        <div id="buttons">
+      <section id="input">
+        <article id="buttons">
           {
-            buttonKeys.map((number) => <button key={number} type="button">{number}</button>)
-          }
-        </div>
+              buttonKeys.map((button) => <button key={button} type="button">{button}</button>)
+            }
+        </article>
       </section>
     </section>
   );
 }
-
-export default Calculator;
