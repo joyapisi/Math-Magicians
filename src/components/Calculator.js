@@ -9,12 +9,14 @@ const obj = {
 
 function Calculator() {
   const [output, setOutput] = useState(obj);
+  const [pressedBtn, setPressedBtn] = useState(null);
 
   const buttonKeys = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
 
   const clickBtn = (e) => {
     const btn = e.target.name;
-    return setOutput(calculate(output, btn));
+    setOutput(calculate(output, btn));
+    setPressedBtn(btn);
   };
 
   const display = (item) => {
@@ -47,6 +49,7 @@ function Calculator() {
                   type="button"
                   name={button}
                   onClick={clickBtn}
+                  className={pressedBtn === buttonKeys ? 'pressed' : ''}
                 >
                   {button}
                 </button>
