@@ -1,21 +1,35 @@
-export default function Calculator() {
-  const buttonKeys = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
+import { useState } from 'react';
+import calculate from '../logic/calculate';
+import CalcButtons from './CalcButtons';
+
+const obj = {
+  total: null,
+  next: null,
+  operation: null,
+};
+
+function Calculator() {
+  const [state, setState] = useState(obj);
+
+  const { total, next, operation } = state;
+
+  const clickBtn = (calcKey) => {
+    const item = calculate(state, calcKey);
+    setState(item);
+  };
 
   return (
-    <section id="calculator">
-      <input
-        id="terminate"
-        type="text"
-        value="0"
-        disabled
-      />
-      <section id="input">
-        <article id="buttons">
-          {
-              buttonKeys.map((button) => <button key={button} type="button">{button}</button>)
-            }
-        </article>
-      </section>
-    </section>
+    <div id="calculator">
+      <h2>Let’s do some math !</h2>
+      <div className="display">
+        { ' ' }
+        {total}
+        {operation}
+        {next}
+      </div>
+      <CalcButtons clickBtn={clickBtn} />
+    </div>
   );
 }
+
+export default Calculator;
