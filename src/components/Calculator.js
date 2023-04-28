@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import calculate from '../logic/calculate';
 import CalcButtons from './CalcButtons';
-import { Screen } from './Screen';
+import Screen from './Screen';
 
 const obj = {
   total: null,

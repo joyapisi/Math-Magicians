@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Display = (props) => {
+const Screen = (props) => {
   const { total, next } = props;
   return <div className="calc-screen">{next || total || 0}</div>;
 };
-Display.propTypes = {
+Screen.propTypes = {
   next: PropTypes.string,
   total: PropTypes.string,
 };
-Display.defaultProps = {
+Screen.defaultProps = {
   next: null,
   total: null,
 };
 
-export default Display;
+export default Screen;
