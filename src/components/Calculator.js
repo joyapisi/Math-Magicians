@@ -19,18 +19,16 @@ function Calculator() {
   };
 
   return (
-    <section id="calculator">
-      <div id="calc-inner-box">
-        <h2>Let’s do some math !</h2>
-        <div className="display">
-          { ' ' }
-          {total}
-          {operation}
-          {next}
-        </div>
-        <CalcButtons clickBtn={clickBtn} />
+    <div id="calculator">
+      <h2>Let’s do some math !</h2>
+      <div className="display">
+        { ' ' }
+        {total}
+        {operation}
+        {next}
       </div>
-    </section>
+      <CalcButtons clickBtn={clickBtn} />
+    </div>
   );
 }
 
