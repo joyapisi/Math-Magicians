@@ -15,9 +15,9 @@ function Calculator() {
   const clickBtn = (calcKey) => setState(({ obj }) => ({ obj: calculate(obj, calcKey) }));
 
   return (
-    <section className="calc-container">
+    <section id="calc-container">
       <h2>Let’s do some math !</h2>
-      <div className="calc-inner-box">
+      <div id="calc-inner-box">
         <Screen total={state.obj.total} next={state.obj.next} />
         <CalcButtons clickBtn={clickBtn} />
       </div>

@@ -19,9 +19,9 @@ const Nav = () => {
     { id: 3, path: '/DisplayQuotes', text: 'DisplayQuotes' },
   ];
   return (
-    <nav className="nav">
+    <nav id="nav">
       <h1>Math Magicians</h1>
-      <div className="nav-box">
+      <div id="nav-box">
         <button type="button" onClick={toggleNav}>
           {navOpen ? (
             <MdClose style={{ color: '#0166ff', width: '30px', height: '30px' }} />
@@ -29,7 +29,7 @@ const Nav = () => {
             <FiMenu style={{ color: '#0166ff', width: '30px', height: '30px' }} />
           )}
         </button>
-        <ul className={`menuNav ${navOpen ? ' showMenu' : ''}`}>
+        <ul className={`nav-menu ${navOpen ? ' showMenu' : ''}`}>
           {paths.map((path) => (
             <li key={path.id}>
               <Link
