@@ -1,7 +1,90 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Navigation */
+.navBar {
+  width: 90%;
+  padding: 0 5%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border-bottom: 1px #e5e5e5 solid;
+  margin-bottom: 4rem;
+}
+
+.navBar h1 {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.navbar-links-cont button {
+  display: none;
+}
+
+.menuNav {
+  display: flex;
+}
+
+.menuNav li {
+  list-style: none;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menuNav li:not(:last-child) {
+  border-right: 1px #0166ff solid;
+}
+
+.menuNav li a {
+  text-decoration: none;
+  color: #0166ff;
+  cursor: pointer;
+}
+
+.menuNav li a:hover {
+  color: #0004db;
+}
+
+/* home */
+.home-cont {
+  width: 90%;
+  padding: 0 5% 4rem 5%;
+}
+
+.home-cont h2 {
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.home-cont p {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+/* Calc */
 #calculator {
   width: 70%;
   height: 600px;
@@ -43,4 +126,71 @@ body {
 
 #buttons :nth-child(17) {
   grid-column: span 2;
+}
+
+/* quotes */
+.quotes-cont {
+  width: 90%;
+  padding: 4rem 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.quotes-cont p {
+  width: 50%;
+  padding: 4rem;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .calculator-cont {
+    flex-direction: column;
+  }
+
+  .calculator-main-cont {
+    width: 100%;
+  }
+
+  .navbar-links-cont button {
+    display: flex;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menuNav {
+    display: none;
+  }
+
+  .showMenu {
+    display: block;
+    background-color: #f5f5f5;
+    position: absolute;
+    width: 300px;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 100px;
+  }
+
+  .showMenu li {
+    padding: 10px 0 0 40px;
+    margin: 2rem;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .quotes-cont p {
+    width: 100%;
+    padding: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.8;
+  }
+
+  .menuNav li:not(:last-child) {
+    border-right: none;
+  }
 }
