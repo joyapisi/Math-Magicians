@@ -21,8 +21,6 @@ function Calculator() {
   return (
     <section id="calculator">
       <div id="calc-inner-box">
-        {' '}
-        */
         <h2>Let’s do some math !</h2>
         <div className="display">
           { ' ' }
