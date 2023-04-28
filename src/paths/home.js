@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home = () => (
-  <div className="home-cont">
+  <div id="home">
     <h2>Welcome to our page</h2>
     <p>
       Calculators have not only greatly enhanced our ability to perform the

@@ -1,12 +1,16 @@
 import React from 'react';
 
-const Quotes = () => (
-  <div className="quotes-cont">
+const MathQuotes = () => (
+  <div id="quotes">
     <p>
-      Mathematics is not about numbers, equations, computations, or
-      algorithms: it is about understanding. -William Paul Thurston
+      `&quot;`
+      You have to wait for people to program you.
+      The only difference is the amount of people that
+      you`&apos` re going to reach but that`&apos`s
+      going to even out in the next two or three years anyway.
+      Computers are being bought faster than televisions right now.`&quot;` -Chuck D.
     </p>
   </div>
 );
 
-export default Quotes;
+export default MathQuotes;
