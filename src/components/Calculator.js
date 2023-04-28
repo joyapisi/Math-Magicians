@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import calculate from '../logic/calculate';
+import CalcButtons from './CalcButtons';
 
 const obj = {
   total: null,
@@ -8,52 +9,29 @@ const obj = {
 };
 
 function Calculator() {
-  const [output, setOutput] = useState(obj);
+  const [state, setState] = useState(obj);
 
-  const buttonKeys = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
+  const { total, next, operation } = state;
 
-  const clickBtn = (e) => {
-    const btn = e.target.name;
-    return setOutput(calculate(output, btn));
-  };
-
-  const display = (item) => {
-    if ((!item.total) && (!item.next)) {
-      return '0';
-    }
-    if (!item.total) {
-      return item.next;
-    }
-    if (item.next && item.total && item.operation) {
-      return item.next;
-    }
-    return item.total;
+  const clickBtn = (calcKey) => {
+    const item = calculate(state, calcKey);
+    setState(item);
   };
 
   return (
     <section id="calculator">
-      <input
-        id="terminate"
-        type="text"
-        value={display(output)}
-        disabled
-      />
-      <section id="input">
-        <article id="buttons">
-          {
-              buttonKeys.map((button) => (
-                <button
-                  key={button}
-                  type="button"
-                  name={button}
-                  onClick={clickBtn}
-                >
-                  {button}
-                </button>
-              ))
-            }
-        </article>
-      </section>
+      <div id="calc-inner-box">
+        {' '}
+        */
+        <h2>Let’s do some math !</h2>
+        <div className="display">
+          { ' ' }
+          {total}
+          {operation}
+          {next}
+        </div>
+        <CalcButtons clickBtn={clickBtn} />
+      </div>
     </section>
   );
 }
