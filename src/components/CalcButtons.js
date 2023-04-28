@@ -42,5 +42,7 @@ const CalcButtons = (props) => {
   );
 };
 
+CalcButtons.propTypes = { clickBtn: PropTypes.func };
+CalcButtons.defaultProps = { clickBtn: '' };
 
 export default CalcButtons;
