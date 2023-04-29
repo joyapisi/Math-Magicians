@@ -47,3 +47,28 @@ body {
 .coloured {
   background-color: darkorange;
 }
+
+#error {
+  color: red;
+}
+
+#quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 40%;
+  margin: 30px 0;
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 0.4rem;
+}
+
+#quotes:hover {
+  color: #4e4e4e;
+}
+
+#quote-loading {
+  color: rgb(201, 237, 245);
+}

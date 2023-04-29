@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import calculate from '../logic/calculate';
 import CalcButtons from './CalcButtons';
+import MathQuotes from './Quotes';
 
 const obj = {
   total: null,
@@ -28,6 +29,7 @@ function Calculator() {
         {next}
       </div>
       <CalcButtons clickBtn={clickBtn} />
+      <MathQuotes />
     </div>
   );
 }
