@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 
 * {
-  /* margin: 0;
-  padding: 0; */
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -11,7 +9,8 @@
 }
 
 body {
-  background: #fff
+  background: #fff;
+  padding: 0 20px;
 }
 
 /* nav */
@@ -19,7 +18,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #000;
+  padding: 0 5px;
 }
 
 #nav-box {
@@ -29,7 +28,8 @@ nav {
 
 nav a {
   text-decoration: none;
-  padding: 5px;
+  margin: 5px;
+  color: #000;
 }
 
 .nav a:active,
@@ -47,15 +47,15 @@ nav a {
 }
 
 #home p {
-  font-weight: light;
+  font-weight: lighter;
 }
 
 /* calculator */
 #calculator {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 70%;
+  gap: 10%;
+  width: 100%;
   height: 90vh;
   margin: 0 auto;
 }
@@ -63,7 +63,11 @@ nav a {
 #calculator h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
-  color: #fff;
+  width: 40%;
+}
+
+#calc-box {
+  width: 50%;
 }
 
 .display {
@@ -120,5 +124,5 @@ nav a {
 }
 
 #quote-loading {
-  color: rgb(201, 237, 245);
+  color: rgb(57, 69, 240);
 }
