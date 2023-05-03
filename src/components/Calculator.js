@@ -22,7 +22,7 @@ function Calculator() {
     <div id="calculator">
       <h2>Let’s do some math !</h2>
       <div id="calc-box">
-        <div className="display">
+        <div id="display">
           { ' ' }
           {total}
           {operation}
