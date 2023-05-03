@@ -1,7 +1,56 @@
-body {
-  background: linear-gradient(90deg, rgb(108, 104, 189) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Comic Neue', cursive;
 }
 
+body {
+  background: #fff
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+
+#nav-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav a:active,
+.nav a:focus {
+  color: rgb(80, 80, 212);
+}
+
+#seperator {
+  margin-top: 3px;
+  color: #000;
+}
+
+#home h3 {
+  font-weight: bolder;
+}
+
+#home p {
+  font-weight: light;
+}
+
+/* calculator */
 #calculator {
   display: flex;
   flex-direction: column;
@@ -52,6 +101,7 @@ body {
   color: red;
 }
 
+/* quotes */
 #quotes {
   display: flex;
   justify-content: center;
