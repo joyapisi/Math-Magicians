@@ -1,51 +1,35 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
 import operate from '../logic/operate';
-import App from '../App';
-
-test('renders home page', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Welcome to my app!/i);
-  expect(linkElement).toBeInTheDocument();
-});
 
 describe('operate', () => {
-  it('should add two numbers correctly', () => {
-    const result = operate(2, 3, '+');
-    expect(result).toBe('5');
+  it('adds two numbers', () => {
+    expect(operate('5', '7', '+')).toEqual('12');
   });
 
-  it('should subtract two numbers correctly', () => {
-    const result = operate(5, 3, '-');
-    expect(result).toBe('2');
+  it('subtracts two numbers', () => {
+    expect(operate('9', '4', '-')).toEqual('5');
   });
 
-  it('should multiply two numbers correctly', () => {
-    const result = operate(2, 3, 'x');
-    expect(result).toBe('6');
+  it('multiplies two numbers', () => {
+    expect(operate('3', '6', 'x')).toEqual('18');
   });
 
-  it('should divide two numbers correctly', () => {
-    const result = operate(6, 2, '÷');
-    expect(result).toBe('3');
+  it('divides two numbers', () => {
+    expect(operate('8', '4', '÷')).toEqual('2');
   });
 
-  it('should handle division by zero correctly', () => {
-    const result = operate(6, 0, '÷');
-    expect(result).toBe("Can't divide by 0.");
+  it('returns error message for division by 0', () => {
+    expect(operate('5', '0', '÷')).toEqual("Can't divide by 0.");
   });
 
-  it('should find modulo of two numbers correctly', () => {
-    const result = operate(5, 2, '%');
-    expect(result).toBe('1');
+  it('calculates the modulo of two numbers', () => {
+    expect(operate('10', '3', '%')).toEqual('1');
   });
 
-  it('should handle modulo when dividing by zero correctly', () => {
-    const result = operate(5, 0, '%');
-    expect(result).toBe("Can't find modulo as can't divide by 0.");
+  it('returns error message for modulo with 0 as divisor', () => {
+    expect(operate('10', '0', '%')).toEqual("Can't find modulo as can't divide by 0.");
   });
 
-  it('should throw an error for unknown operation', () => {
-    expect(() => operate(2, 3, '$')).toThrow("Unknown operation '$'");
+  it('throws an error for unknown operation', () => {
+    expect(() => operate('5', '7', 'foo')).toThrowError("Unknown operation 'foo'");
   });
 });

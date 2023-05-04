@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav should render correctly 1`] = `
+<nav>
+  <h2>
+    Math Magicians
+  </h2>
+  <div
+    id="nav-box"
+  >
+    <a
+      href="/"
+    >
+      Home
+    </a>
+    <span
+      id="seperator"
+    >
+      |
+    </span>
+    <a
+      href="/Calculator"
+    >
+      Calculator
+    </a>
+    <span
+      id="seperator"
+    >
+      |
+    </span>
+    <a
+      href="/Quotes"
+    >
+      Quotes
+    </a>
+  </div>
+</nav>
+`;
