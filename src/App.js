@@ -6,7 +6,7 @@ import {
 import Nav from './components/nav';
 import Home from './components/Home';
 import Calculator from './components/Calculator';
-import MathQuotes from './components/Quotes';
+import MathQuotes from './components/MathQuotes';
 
 function App() {
   return (
