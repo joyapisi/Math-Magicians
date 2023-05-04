@@ -1,13 +1,12 @@
 import './App.css';
 import {
-  // BrowserRouter,
   Routes,
   Route,
 } from 'react-router-dom';
 import Nav from './components/nav';
 import Home from './components/Home';
 import Calculator from './components/Calculator';
-import MathQuotes from './components/Quotes';
+import MathQuotes from './components/MathQuotes';
 
 function App() {
   return (

@@ -70,7 +70,7 @@ nav a {
   width: 50%;
 }
 
-.display {
+#display {
   display: flex;
   justify-content: flex-end;
   background-color: grey;
