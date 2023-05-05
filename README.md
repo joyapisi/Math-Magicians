@@ -9,11 +9,12 @@ React JS Project
   - [🛠 Built With](#built-with)
       - [Tech Stack](#tech-stack)
       - [Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#set-up)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-      - [Install webpack](#webhint-installation)
+      - [Install ReactJS](#react-installation)
       - [Install linters](#linter-installation)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -58,6 +59,9 @@ By building this application, you will learn how to use React. It also follows <
 - **[Dynamic-Design]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+View my web app <a href="https://joys-math-magicians.netlify.app/">here</a>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -260,6 +264,8 @@ If you think that change is necessary - open a Pull Request in this repository a
 - LinkedIn: (https://http://www.linkedin.com/in/joy-phoebe-00b80a13a)
 
 ## 🤝 Contributing <a name="contributing"></a>
+
+- GitHub: (https://github.com/Shaheryar0054)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
